@@ -6,7 +6,7 @@
 
 ## Instalar helm
 
-```
+```bash
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 
 chmod 700 get_helm.sh
@@ -22,7 +22,7 @@ chmod 700 get_helm.sh
 
 - Problemas podem ocorrer instalando pelo binário, caso ocorram tente instalar pelo homebrew ou snap com os comandos:
 
-```
+```bash
 brew install yq
 
 ou
