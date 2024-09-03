@@ -1,5 +1,8 @@
 # Instalar e configurar Kubernets
 
+Para mais detalhes checar [tutorial](https://github.com/leomichalski/kubernetes-para-devs/tree/main) e a [documentação oficial](https://kubernetes.io/docs/home/).
+
+
 ## Instalar Docker
 
 ```bash
@@ -58,19 +61,19 @@ Mais opções de instalação em <https://helm.sh/docs/intro/install/>
 ### Clonar este repositório
 
 ```bash
-git clone https://github.com/leomichalski/kubernetes-for-devs.git
+git clone https://github.com/leomichalski/kubernetes-para-devs/tree/main
 ```
 
 ### Navegar até a pasta principal do repositório
 
 ```bash
-cd kubernetes-for-devs
+cd GCES-ESO-DOC
 ```
 
 ### Começar cluster Kubernetes com Kind
 
 ```bash
-kind create cluster --config setup/kind_config.yaml
+kind create cluster --config config/kind_config.yaml
 ```
 
 ### Salver arquivo kubeconfig para poder usar o kubectl
@@ -80,8 +83,6 @@ kind get kubeconfig --name aula-gces | tee kubeconfig
 ```
 
 ### Testar kubectl
-
-Sempre usar a flag "--kubeconfig kubeconfig" quando for usar o kubectl. Há outras formas de facilitar o uso do kubectl, porém não é o foco dessa aula.
 
 ```bash
 kubectl get nodes --kubeconfig kubeconfig
