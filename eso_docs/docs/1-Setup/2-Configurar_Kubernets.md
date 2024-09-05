@@ -15,7 +15,7 @@ sudo docker version
 
 ## Instalar Kind (Kubernetes In Docker)
 
-Para Linux AMD64 / x86_64
+### Para Linux AMD64 / x86_64
 
 ```bash
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.23.0/kind-linux-amd64
@@ -26,11 +26,20 @@ sudo mv ./kind /usr/local/bin/kind
 kind --version
 ```
 
+### Para MacOs usando Homebrew
+
+```bash
+brew install kind
+
+# testar
+kind --version
+```
+
 Mais opções de instalação em <https://kind.sigs.k8s.io/docs/user/quick-start/#installation>
 
 ## Instalar kubectl
 
-Para Linux AMD64 / x86_64
+### Para Linux AMD64 / x86_64
 
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -41,6 +50,19 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version
 ```
 
+### Para MacOs usando Homebrew
+
+```bash
+brew install kubectl
+
+or
+
+brew install kubernetes-cli
+
+# testar
+kubectl version --client
+```
+
 Mais opções de instalação em <https://kubernetes.io/docs/tasks/tools/#kubectl>
 
 ## Instalar Helm3
@@ -49,6 +71,15 @@ Mais opções de instalação em <https://kubernetes.io/docs/tasks/tools/#kubect
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 sh ./get_helm.sh
+
+# testar
+helm version
+```
+
+### Para MacOs usando Homebrew
+
+```bash
+brew install helm
 
 # testar
 helm version
