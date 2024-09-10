@@ -6,6 +6,26 @@ Este repositório foi criado com o objetivo de auxiliar alunos que estão contri
 
 A documentação está organizada para fornecer uma base sólida, garantindo que você tenha todas as ferramentas e configurações adequadas para colaborar de forma eficiente no desenvolvimento e manutenção do External Secrets Operator.
 
+## Apresentação das Tecnologias
+
+### Golang
+
+É uma linguagem de programação criada pelo Google, muito utilizada para desenvolvimento backend, de microserviços, aplicativos CLI, entre outros.
+
+O Go é utilizado tanto no Kubernetes, quanto no ESO, as duas principais tecnologias envolvidas no trabalho.
+
+### Kubernetes
+
+Kubernetes é um sistema de código aberto para automação de gerenciamento, escalonamento e implementação de contêiners.
+
+Com o Kubernetes é possível orquestrar de forma mais fácil múltiplos contêineres com suporte à _auto healing_ (sobe novamente o contêiner quando este for derrubado), _work balance_ (distribui de forma dinâmica a carga de trabalho em vários ambientes de acordo com a necessidade), entre outros.
+
+### External Secrets Operator (ESO)
+
+O ESO, é  uma ferramenta que integra segredos (variáveis sensíveis) de provedores externos, como AWS, Google Cloud, entre outros, com um ambiente kubertenes.
+
+Com ele, é possível, pegar senhas salvas em um ambiente AWS, por exemplo, e subir para um contêiner em um cluster Kubernetes.
+
 ## Estrutura do Repositório
 
 As pastas deste repositório foram organizadas de forma a facilitar o processo de configuração e uso do External Secrets Operator (ESO), permitindo que você siga os passos necessários de maneira sequencial e eficiente. A estrutura está dividida da seguinte forma:
