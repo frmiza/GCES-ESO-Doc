@@ -13,10 +13,8 @@ As pastas deste repositório foram organizadas de forma a facilitar o processo d
 Setup: Contém os arquivos e instruções para a configuração inicial, incluindo a instalação do Kubernetes, ESO e demais pré-requisitos.
 [SETUP](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/1-Setup)
 
-Conectando: Orienta sobre como integrar o ESO ao Kubernetes e outras plataformas, incluindo configurações de credenciais e permissões.
+Conectando: Orienta sobre como integrar o ESO ao Kubernetes e outras plataformas, incluindo como conectar com clusters kubernets locais ou por meio de ferramentas de computação em nuvem como a AWS, Google cloud e Azure
 [CONECTANDO](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/2-Conectando)
 
 Links Externos: Uma coleção de recursos externos úteis, como artigos, fóruns e documentações oficiais, que podem auxiliar durante o desenvolvimento.
-
-Documentações External: Documentação detalhada sobre o ESO, com tutoriais e guias de referência.
-Essa divisão foi pensada para garantir uma navegação clara e intuitiva, permitindo que você siga os passos na ordem correta para o funcionamento pleno do projeto.
+[LINKS](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/3-Links)
