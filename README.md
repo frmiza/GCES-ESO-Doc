@@ -38,3 +38,38 @@ Conectando: Orienta sobre como integrar o ESO ao Kubernetes e outras plataformas
 
 Links Externos: Uma coleção de recursos externos úteis, como artigos, fóruns e documentações oficiais, que podem auxiliar durante o desenvolvimento.
 [LINKS](https://github.com/frmiza/GCES-ESO-Doc/tree/docs/eso_docs/docs/3-Links)
+
+Seção com resolução de problemas encontrados durante o setup do projeto:
+[COMMON_ISSUES](https://github.com/frmiza/GCES-ESO-Doc/tree/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/docs/4-Common_issues)
+
+## Executar a documentação localmente
+
+A documentação foi desenvolvida usando a ferramenta mkdocs. Para visualiza-la localmente, é necessário ter o python3 instalado na máquina e seguir os passos abaixo:
+
+(linux)
+
+1. Criar ambiente virtual
+
+```bash
+python3 -m venv docs
+```
+
+2. Ativar ambiente virtual
+
+```bash
+source docs/bin/activate
+```
+
+3. Instalar as dependencias
+
+```bash
+pip install mkdocs
+pip install mkdocs-material
+```
+
+4. Executar a doc no localhost:8000:
+
+```bash
+cd eso_docs
+mkdocs serve
+```

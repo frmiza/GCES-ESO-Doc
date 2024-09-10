@@ -16,7 +16,7 @@ Ao executar o comando `make build` dentro da raiz do projeto do ESO, é necessá
 
 Na documentação oficial do ESO, consta que de fato é necessário possuir instalada na máquina a biblioteca `yq` com versão igual ou superior a 4.2X.X.
 
-![yq required version](/eso_docs/assets/pictures/ESO_make_issue_2.png)
+![yq required version](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_2.png)
 
 No entanto vale ressaltar que para que o yq funcione corretamente é obrigatório se ter instalada também sua dependência, o jq.
 As instruções de instalação de cada um podem ser acessadas nos respectivos links:
@@ -37,7 +37,7 @@ As configurações do ambiente no qual o problema foi identificado são:
 
 Ao executar o `make build`, é retornado o seguinte erro no std output:
 
-![erro no terminal](/eso_docs/assets/pictures/ESO_make_issue_3.png)
+![erro no terminal](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_3.png)
 
 O projeto não é montado como deveria, e essa mensagem é exibida no terminal, seguida do trecho de help do manual do yq.
 
@@ -90,7 +90,7 @@ O sudo é necessário pois está sendo adicionado o binário direto no diretóri
 
 O resultado após essa instalação é: 
 
-![yq version](/eso_docs/assets/pictures/ESO_make_issue_4.png)
+![yq version](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_4.png)
 
 ##### instalando jq mais atualizado
 
@@ -98,7 +98,7 @@ A versão mais atualizada do binário do jq pode ser baixada através do link na
 
 Para o caso desse projeto, a versão escolhida foi a 1.7.1 AMD64.
 
-![bin jq](/eso_docs/assets/pictures/ESO_make_issue_5.png)
+![bin jq](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_5.png)
 
 Ao clicar no link um binário do jq será baixado para o diretório de Downloads definido no seu navegador. Para garantir que o binário será encontrado durante a execução make, siga os passos a seguir:
 
@@ -115,7 +115,7 @@ alias jq="/path/para/o/seu/binario_jq" # Substitua pelo path onde está o execut
 ```
 6. Após salvar e fechar o arquivo, basta abrir um novo terminal e verificar que o jq está acessível:
 
-![jq version](/eso_docs/assets/pictures/ESO_make_issue_6.png)
+![jq version](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_6.png)
 
 OBS: Para esse tutorial foi usado o bash, caso esteja utilizando um shell diferente, busque adaptar os comandos e arquivos de configuração quando necessário
 
@@ -127,10 +127,10 @@ Após instaladas as versões anteriores do jq e yq, o comando make build foi exe
 
 ##### Versões e execução do make build
 
-![make1](/eso_docs/assets/pictures/ESO_make_issue_7.png)
+![make1](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_7.png)
 
 São instaladas algumas dependencias do GO...
 
 E o resultado:
 
-![make1](/eso_docs/assets/pictures/ESO_make_issue_8.png)
+![make1](https://raw.githubusercontent.com/frmiza/GCES-ESO-Doc/97a27e5594df9a12945dda4746d4dabacd47b30f/eso_docs/assets/pictures/ESO_make_issue_8.png)
